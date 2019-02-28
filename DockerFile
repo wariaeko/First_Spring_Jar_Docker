@@ -1,0 +1,5 @@
+FROM openjdk:8-jre-alpine
+COPY ./target/myfirstspring-0.0.1-SNAPSHOT.jar /data/
+WORKDIR /data/
+EXPOSE 8090
+CMD ["java", "-jar", "myfirstspring-0.0.1-SNAPSHOT.jar"]
